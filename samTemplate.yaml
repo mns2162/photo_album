@@ -12,7 +12,7 @@ Resources:
       Description: "Lambda function for CD Demo"
       MemorySize: 128
       Timeout: 30
-      Role: "arn:aws:iam::659573480588:role/admin_access"
+      Role: "arn:aws:iam::659573480588:role/service-role/search-photos-role-heu865nr"
       Environment:
         Variables:
           REGION: us-east-1
@@ -26,7 +26,7 @@ Resources:
       Description: "Lambda function for CD Demo"
       MemorySize: 128
       Timeout: 30
-      Role: "arn:aws:iam::659573480588:role/admin_access"
+      Role: "arn:aws:iam::659573480588:role/service-role/index-photos-role-74wq3s6y"
       Environment:
         Variables:
           REGION: us-east-1
