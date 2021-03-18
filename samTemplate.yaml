@@ -2,8 +2,6 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: CD Album Lambda
 Resources:
-  Bucket1:
-    Type: 'AWS::S3::Bucket'
   CDIndexLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
@@ -23,7 +21,8 @@ Resources:
           Type: S3
           Properties:
             Bucket:
-              Ref: Bucket1
+              Ref: 'vc-album-b2'
+            Key: 'photos'
             Events:
               - 's3:ObjectCreated'
   CDSearchLambda:
