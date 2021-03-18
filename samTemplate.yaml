@@ -14,7 +14,7 @@ Resources:
       Description: 'Lambda function for CD index photos'
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::659573480588:role/es_s3_lex_rekog_access'
+      Role: 'arn:aws:iam::659573480588:role/admin_access'
       Environment:
         Variables:
           REGION: us-east-1
@@ -36,7 +36,7 @@ Resources:
       Description: 'Lambda function for CD search photos'
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::659573480588:role/es_s3_lex_rekog_access'
+      Role: 'arn:aws:iam::659573480588:role/admin_access'
       Events:
         getAZsAPI:
           Type: Api
