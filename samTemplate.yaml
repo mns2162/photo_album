@@ -22,9 +22,7 @@ Resources:
           Properties:
             Bucket:
               Ref: 'vc-album-b2'
-            Key: 'photos'
-            Events:
-              - 's3:ObjectCreated'
+            Events: 's3:ObjectCreated'
   CDSearchLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
