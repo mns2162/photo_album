@@ -23,7 +23,7 @@ Resources:
             Bucket:
               Ref: Bucket1
             Events:
-              - 's3:ObjectCreated:*'
+              - 's3:ObjectCreated'
   Bucket1:
     Type: 'AWS::S3::Bucket'
   CDSearchLambda:
